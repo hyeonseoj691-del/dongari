@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사막의 멸종위기종</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 메인 페이지: 아이콘 3개 -->
+        <div id="mainPage" class="main-page">
+            <h1>사막의 멸종위기종</h1>
+            <p class="subtitle">위험에 처한 사막 동물들을 만나보세요</p>
+            
+            <div class="icon-grid">
+                <div class="icon-card" onclick="showSpecies(0)">
+                    <div class="icon-box">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <p>페넥여우</p>
+                </div>
+                
+                <div class="icon-card" onclick="showSpecies(1)">
+                    <div class="icon-box">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <p>마밀라리아 선인장</p>
+                </div>
+                
+                <div class="icon-card" onclick="showSpecies(2)">
+                    <div class="icon-box">
+                        <i class="fas fa-horse"></i>
+                    </div>
+                    <p>야생쌍봉낙타</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 상세 페이지 -->
+        <div id="detailPage" class="detail-page hidden">
+            <button class="back-btn" onclick="goBack()">← 돌아가기</button>
+            
+            <div class="detail-content">
+                <h2 id="speciesName"></h2>
+                <img id="speciesImage" src="" alt="species">
+                <p id="speciesDescription"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
